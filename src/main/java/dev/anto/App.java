@@ -1,17 +1,15 @@
 package dev.anto;
 
-/**
- * Hello world!
- */
-public final class App {
-    private App() {
-    }
-
-    /**
-     * Says hello to the world.
-     * @param args The arguments of the program.
-     */
+public class App {
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        int numero = 371;
+        System.out.println(numero + " es un número Armstrong? " + Armstrong.isArmstrong(numero));
+
+        // Puedes probar con otros números
+        int numero2 = 173;
+        System.out.println(numero2 + " es un número Armstrong? " + Armstrong.isArmstrong(numero2));
+
+        int numero3 = 731;
+        System.out.println(numero3 + " es un número Armstrong? " + Armstrong.isArmstrong(numero3));
     }
 }
